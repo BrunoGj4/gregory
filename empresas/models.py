@@ -1,5 +1,5 @@
 from django.db import models
-from django.shortcuts import reverse, redirect
+from django.shortcuts import reverse
 # Create your models here.
 class Empresa(models.Model):
    nome = models.CharField(max_length=100, help_text='Nome da empresa')
