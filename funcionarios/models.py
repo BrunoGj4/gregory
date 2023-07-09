@@ -7,6 +7,7 @@ from django.shortcuts import reverse
 class Funcionario(models.Model):
     nome = models.CharField(max_length=100) 
     user = models.OneToOneField(User, on_delete=models.PROTECT)
+    # user = models.ManyToManyField(Empresa)
     departamentos = models.ManyToManyField(Departamento)
     empresa = models.ForeignKey(
        Empresa, 

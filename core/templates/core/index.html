@@ -15,6 +15,7 @@ Seja bem-vindo
     <div class="col-sm">
         <p>Olá {{ usuario.funcionario.nome }}</p>
         <a href="{% url 'funcionarios:lista_funcionarios' %}">Gerenciar funcionarios</a>
+        <a href="{% url 'departamentos:lista_departamento' %}">Gerenciar Departamento</a>
     </div>
     <div class="col-sm">
         {% if usuario.funcionario.empresa %}
