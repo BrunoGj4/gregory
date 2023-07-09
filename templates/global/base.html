@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% include 'global/partials/head.html' %}
+    
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <div class="container">
+        {% block main %}
+        {% endblock main %}
+
+    </div>
+
+    {% include 'global/partials/footer.html' %}
+</body>
+</html>
