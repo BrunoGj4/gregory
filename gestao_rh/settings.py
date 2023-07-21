@@ -26,6 +26,7 @@ jls_extract_var = [
     'documentos',
     'registro_hora_extra',
     'core',
+    'bootstrapform',
 ]
 jls_extract_var = jls_extract_var
 INSTALLED_APPS = jls_extract_var
@@ -106,7 +107,8 @@ STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-LOGIN_REDIRECT_URL = '?next=/'
+LOGIN_REDIRECT_URL = 'core:home'
+# LOGIN_REDIRECT_URL = 'home'
 
 LOGOUT_REDIRECT_URL = 'login'
 
